@@ -1,0 +1,27 @@
+  Linear Regression            R²=0.8626  MAE=2.863
+  Ridge Regression             R²=0.8626  MAE=2.864
+  Lasso Regression             R²=0.8590  MAE=2.903
+  Decision Tree                R²=0.7340  MAE=3.869
+  Random Forest                R²=0.8377  MAE=3.042
+  Gradient Boosting            R²=0.8504  MAE=2.941
+  Extra Trees                  R²=0.8324  MAE=3.129
+  K-Nearest Neighbors          R²=0.8050  MAE=3.379
+
+📊 Model Comparison:
+                 Model      R2     MAE    RMSE   CV_R2  CV_Std
+0    Linear Regression  0.8626  2.8627  3.5706  0.8552  0.0025
+1     Ridge Regression  0.8626  2.8638  3.5716  0.8552  0.0025
+2     Lasso Regression  0.8590  2.9029  3.6175  0.8532  0.0033
+3    Gradient Boosting  0.8504  2.9407  3.7268  0.8367  0.0056
+4        Random Forest  0.8377  3.0420  3.8818  0.8227  0.0071
+5          Extra Trees  0.8324  3.1286  3.9441  0.8265  0.0045
+6  K-Nearest Neighbors  0.8050  3.3786  4.2539  0.7933  0.0081
+7        Decision Tree  0.7340  3.8692  4.9690  0.7174  0.0132🔧 Tuning Gradient Boosting...
+Best params : {'learning_rate': 0.05, 'max_depth': 3, 'n_estimators': 200, 'subsample': 0.8}
+Best CV R²  : 0.8403
+
+🏆 Tuned Gradient Boosting on Test Set:
+  R²   : 0.8523
+  MAE  : 2.924
+  RMSE : 3.703
+  MAPE : 4.77%
